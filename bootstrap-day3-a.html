@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap | Day 01 Basic 2 </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h1>Bonbon tiramisu fruitcake tart cookie gingerbread chocolate bar jelly-o.</h1>
+
+
+		<div class="container">
+		  <h2>Progress Bar With Label</h2>
+		  <div class="progress">
+		    <div class="progress-bar" id="myBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+		      progress
+		    </div>
+		  </div>
+		</div>
+
+		<button onclick="move()">Click Me</button> 
+		<br><br>
+
+
+		<script>
+		function move() {
+		  var elem = document.getElementById("myBar");   
+		  var width = 1;
+		  var id = setInterval(frame, 10);
+		  function frame() {
+		    if (width >= 100) {
+		      clearInterval(id);
+		    } else {
+		      width++; 
+		      elem.style.width = width + '%'; 
+		    }
+		  }
+		}
+		</script>
+		
+		<div class="row">
+			<div class="col-sm-5 col">
+				<p class="muted">
+					Donut carrot cake apple pie donut biscuit chocolate candy pudding. Biscuit powder macaroon chocolate ice cream danish chocolate cake oat cake gummi bears. Brownie chupa chups toffee brownie tootsie roll cupcake pie. Donut sweet cupcake. Marzipan jelly pudding.	
+				</p><br>
+				<p class="muted">
+					Donut carrot cake apple pie donut biscuit chocolate candy pudding. Biscuit powder macaroon chocolate ice cream danish chocolate cake oat cake gummi bears. Brownie chupa chups toffee brownie tootsie roll cupcake pie. Donut sweet cupcake. Marzipan jelly pudding.	
+				</p>				
+			</div>
+			<div class="col-sm-2 col">
+				<p class="lead">
+					Brownie gingerbread chocolate soufflé. Bonbon lemon drops brownie cotton candy carrot cake croissant ice cream. Wafer pudding chocolate bar tart sweet roll. Carrot cake cupcake dessert chocolate cake. 
+				</p>
+			</div>
+			<div class="col-sm-5 col">
+				<blockquote>       
+        			<p>Chupa chups oat cake carrot cake tiramisu pudding oat cake caramels powder toffee. Soufflé jelly beans soufflé biscuit liquorice gummies danish halvah gingerbread. Cupcake caramels sesame snaps jelly beans oat cake bonbon jelly beans cupcake topping. Lemon drops carrot cake candy canes jujubes icing. Dragée soufflé oat cake gummies icing. Jelly beans topping candy canes. Dragée soufflé muffin lemon drops cupcake. Cupcake soufflé caramels topping muffin. Chocolate cake danish pie cookie sesame snaps chocolate bear claw soufflé halvah. Dragée caramels tiramisu.</p>        
+    			    <small>Cake Expert, <cite title="Source Title">Sabine Hartmann</cite></small> </blockquote>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<h4>Cupcake soufflé caramels topping muffin</h4>
+			<div class="col-sm-4 col">
+				<p>
+					<abbr title="Chupa chups oat cake carrot caken">Ccoccc</abbr> tiramisu pudding oat cake caramels powder toffee. Soufflé jelly beans soufflé biscuit liquorice gummies danish halvah gingerbread. Cupcake caramels sesame snaps jelly beans oat cake bonbon jelly beans cupcake topping. Lemon drops carrot cake candy canes jujubes icing. Dragée soufflé oat cake gummies icing. Jelly beans topping candy canes. Dragée soufflé muffin lemon drops cupcake. Cupcake soufflé caramels topping muffin. Chocolate cake danish pie cookie sesame snaps chocolate bear claw soufflé halvah. Dragée caramels tiramisu.	
+				</p>				
+			</div>
+			<div class="col-sm-3 col-sm-offset-1 col">
+				<p class="text-success">
+					Brownie gingerbread chocolate soufflé. Bonbon lemon drops brownie cotton candy carrot cake croissant ice cream. Wafer pudding chocolate bar tart sweet roll. Carrot cake cupcake dessert chocolate cake. Chocolate bar jelly chupa chups cookie caramels tart cupcake chocolate marshmallow. Pie cotton candy tiramisu jelly-o apple pie. Tart sweet roll apple pie tiramisu jelly biscuit. Carrot cake danish sugar plum jujubes chupa chups. Biscuit cotton candy muffin biscuit. Oat cake gingerbread pudding jelly beans tart.	
+				</p>
+			</div>
+			<div class="col-sm-4 col">
+				<ul class="list-unstyled">        
+        			<li>Donut carrot cake</li>       
+        			<li>Biscuit powder macaroon                
+          				<ul> 
+            				<li>Brownie chupa chups</li>                        
+            				<li>Marzipan jelly pudding</li>                
+          				</ul>        
+        			</li>     
+        			<li>Donut sweet cupcake</li> 
+      			</ul><br>
+
+			 <table class="table"> 
+		        <caption>Donut carrot cake</caption>  
+		        <thead>    
+		          <tr>      
+		            <th>1</th>     
+		            <th>2</th>   
+		            <th>3</th>  
+		          </tr>
+		        </thead>  
+		        <tbody>   
+		          <tr> 
+		            <td>apple</td>     
+		            <td>pie</td>  
+		            <td>donut</td> 
+		          </tr>  
+		          <tr> 
+		            <td>biscuit</td>     
+		            <td>chocolate</td>  
+		            <td>candy</td> 
+		          </tr>  
+		          <tr> 
+		            <td>macaroon</td>     
+		            <td>toffee</td>  
+		            <td>donut</td> 
+		          </tr>  
+		        </tbody> 
+		      </table>
+			</div>
+		</div>		
+			
+			
+			
+
+
+
+	</div>
+
+	
+</body>
+</html>
